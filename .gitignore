@@ -1,0 +1,9 @@
+node_modules/
+.venv/
+__pycache__/
+dist/
+build/
+target/
+cdk.out/
+sessions/
+.DS_Store
