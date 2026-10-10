@@ -39,14 +39,14 @@
 - [ ] NFR Requirements - SKIP (demo-grade)
 - [ ] NFR Design - SKIP
 - [ ] Infrastructure Design - SKIP (handled in code gen)
-- [ ] Code Generation - PENDING
-- [ ] Build and Test - PENDING
+- [x] Code Generation - COMPLETED
+- [x] Build and Test - COMPLETED
 
 ### OPERATIONS PHASE
 - [ ] Operations - PLACEHOLDER
 
 ## Current Status
-- **Lifecycle Phase**: INCEPTION
-- **Current Stage**: Workflow Planning (awaiting approval)
-- **Next Stage**: Application Design
-- **Status**: Awaiting user approval of execution plan
+- **Lifecycle Phase**: CONSTRUCTION
+- **Current Stage**: Build and Test (COMPLETED - awaiting user approval)
+- **Next Stage**: Operations (placeholder)
+- **Status**: Build succeeds for all 4 packages; 14/14 unit tests pass (Vitest); CDK synth passes. Instruction docs + summary generated under aidlc-docs/construction/build-and-test/. Awaiting user approval to proceed to Operations.

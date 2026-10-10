@@ -1,0 +1,30 @@
+{
+  "name": "anycompanyread",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AnyCompanyRead - Online Book E-Commerce Platform (AWS Serverless demo)",
+  "workspaces": [
+    "packages/shared",
+    "packages/backend",
+    "packages/infrastructure",
+    "packages/frontend"
+  ],
+  "scripts": {
+    "build:shared": "npm run build --workspace=packages/shared",
+    "build:backend": "npm run build --workspace=packages/backend",
+    "build:frontend": "npm run build --workspace=packages/frontend",
+    "build": "npm run build:shared && npm run build:backend && npm run build:frontend",
+    "deploy": "npm run build && npm run deploy --workspace=packages/infrastructure",
+    "seed": "npm run seed --workspace=packages/infrastructure",
+    "synth": "npm run build:shared && npm run build:backend && npm run synth --workspace=packages/infrastructure",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.5.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.5.0"
+  },
+  "license": "MIT"
+}
